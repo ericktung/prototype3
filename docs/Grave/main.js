@@ -77,10 +77,10 @@ function update() {
     nextWallY += 10;
   }
   nextWallY -= scr;
-  color("red");
+   color("light_black");
   walls = walls.filter((w) => {
     w.y -= scr;
-    box(w, 8, 8);
+    arc(w, 4, 4);
     return w.y > -99;
   });
   spikeAddDist -= scr;
